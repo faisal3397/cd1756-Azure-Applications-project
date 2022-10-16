@@ -36,7 +36,7 @@ class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(150))
-    # TODO: Add subtitle field
+    # TODO: Add subtitle field //DONE
     subtitle = db.Column(db.String(500))
     author = db.Column(db.String(75))
     body = db.Column(db.String(800))
