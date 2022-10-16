@@ -1,4 +1,6 @@
 from datetime import datetime
+
+from requests import delete
 from FlaskWebProject import app, db, login
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
@@ -69,4 +71,7 @@ class Post(db.Model):
             db.session.add(self)
         db.session.commit()
 
-    # TODO: Add a funtion to delete an article
+    # TODO: Add a funtion to delete an article //DONE
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()

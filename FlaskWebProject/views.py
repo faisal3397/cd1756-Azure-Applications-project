@@ -3,6 +3,7 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
+from os import abort
 from flask import render_template, flash, redirect, request, session, url_for
 from werkzeug.urls import url_parse
 from config import Config
@@ -62,7 +63,10 @@ def post(id):
 @login_required
 def delete_post(id):
     post = Post.query.get(int(id))
-    # TODO: Delete post
+    # TODO: Delete post //DONE
+    if post is None:
+        app.logger.error('Post not found')
+    post.delete()
     return redirect(url_for('home'))
 
 @app.route('/login', methods=['GET', 'POST'])
