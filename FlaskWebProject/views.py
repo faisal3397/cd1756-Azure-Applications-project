@@ -58,6 +58,13 @@ def post(id):
         form=form
     )
 
+@app.route('/post/<int:id>', methods=['DELETE'])
+@login_required
+def delete_post(id):
+    post = Post.query.get(int(id))
+    # TODO: Delete post
+    return redirect(url_for('home'))
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
