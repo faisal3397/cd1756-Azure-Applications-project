@@ -62,7 +62,10 @@ def post(id):
 @login_required
 def delete_post(id):
     post = Post.query.get(int(id))
-    # TODO: Delete post
+    # TODO: Delete post //DONE
+    if post is None:
+        app.logger.error('Post not found')
+    post.delete_post()
     return redirect(url_for('home'))
 
 @app.route('/login', methods=['GET', 'POST'])

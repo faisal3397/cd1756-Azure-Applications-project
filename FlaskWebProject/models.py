@@ -69,4 +69,7 @@ class Post(db.Model):
             db.session.add(self)
         db.session.commit()
 
-    # TODO: Add a funtion to delete an article
+    # TODO: Add a funtion to delete an article //DONE
+    def delete_post(self):
+        db.session.delete(self)
+        db.session.commit()
