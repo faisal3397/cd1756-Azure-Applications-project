@@ -1,0 +1,68 @@
+TODOS:
+1- run the app locally //DONE
+    - create virtual env [python -m venv venv]
+    - activate virtual env [./venv/Scripts/activate]
+    - install requirements using pip install [.\venv\Scripts\python.exe -m pip install --upgrade pip] && [.\venv\Scripts\python.exe -m pip install -r .\requirements.txt]
+    - run the app [python application.py]
+2- Complete TODOS in the file __init__.py //DONE
+3- Complete TODOS in the file views.py //DONE
+4- Modify the Python Application and SQL Database to include Subtitle field
+    - Modify post.html //DONE
+    - Modify index.html //DONE
+    - Modify forms.py [class PostForm] //DONE
+    - Modify models.py [class Post] //DONE
+    - Modify post-table-init.sql //DONE
+5- Add the functionality to delete an article
+    - Modify index.html //DONE
+    - Modify views.py //DONE
+    - Modify models.py [class Post] //DONE
+6- Add the functionality to delete an image
+7- Adjust the app to better track which user is logged in. //DONE
+    - Modify view.py [function authorized()]
+8- Complete the analysis template in `WRITEUP.md` 
+    a VM or App Service solution for the CMS app:
+        - Analyze costs, scalability, availability, and workflow
+        - Choose the appropriate solution (VM or App Service) for deploying the app
+        - Justify your choice
+    Detail how the app and any other needs would have to change for you to change your decision in the last section.
+9- Create a Resource Group in Azure    
+10- Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder).
+11- Create a Storage Container in Azure for `images` to be stored in a container.
+12- Register your app in Azure Active Directory
+13- Modify the values in the file config.py
+14- Test your app just like what is said in Project Requirements #7
+15- Provide the screenshots
+
+Project Requirements:
+1. Create a Resource Group in Azure.
+2. Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder).
+    - Provide a screenshot of the populated tables as detailed further below.
+3. Create a Storage Container in Azure for `images` to be stored in a container.
+    - Provide a screenshot of the storage endpoint URL as detailed further below.
+4. Add functionality to the Sign In With Microsoft button. //DONE
+    - This will require completing TODOs in `views.py` with the `msal` library, along with appropriate registration in Azure Active Directory.
+5. Choose to use either a VM or App Service to deploy the FlaskWebProject to Azure. Complete the analysis template in `WRITEUP.md` (or include in the README) to compare the two options, as well as detail your reasoning behind choosing one or the other. Once you have made your choice, go through with deployment.
+6. Add logging for whether users successfully or unsuccessfully logged in. //DONE
+    - This will require completing TODOs in `__init__.py`, as well as adding logging where desired in `views.py`.
+7. To prove that the application in on Azure and working, go to the URL of your deployed app, log in using the credentials in this README, click the Create button, and create an article with the following data:
+	- Title: "Hello World!"
+	- Author: "Jane Doe"
+	- Body: "My name is Jane Doe and this is my first article!"
+	- Upload an image of your choice. Must be either a .png or .jpg.
+   After saving, click back on the article you created and provide a screenshot proving that it was created successfully. Please also make sure the URL is present in the screenshot.
+8. Log into the Azure Portal, go to your Resource Group, and provide a screenshot including all of the resources that were created to complete this project. (see sample screenshot in "example_images" folder)
+9. Take a screenshot of the Redirect URIs entered for your registered app, related to the MS Login button.
+10. Take a screenshot of your logs (can be from the Log stream in Azure) showing logging from an attempt to sign in with an invalid login, as well as a valid login.
+
+Bonuses:
+- Modify both the Python Application and SQL Database to include a Subtitle field. The field should be displayed below the Title field in the screenshot, and deployed with the app.
+- The current application does not allow for the deletion of a created article, or complete removal of an image after one is added (it can only be replaced). Add this functionality to the application.
+- The current application just uses the admin account if the user signs in with Microsoft. Adjust the app to better track which user is logged in.
+
+Images to submit:
+1. article-cms-solution.png
+2. azure-portal-resource-group.png
+3. sql-storage-solution.png
+4. blob-solution.png
+5. uri-redirects-solution.png
+6. log-solution.png
