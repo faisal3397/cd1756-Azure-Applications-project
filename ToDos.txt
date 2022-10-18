@@ -31,8 +31,9 @@ TODOS:
 11- Create a Storage Container in Azure for `images` to be stored in a container. //DONE
 12- Register your app in Azure Active Directory //DONE
 13- Modify the values in the file config.py //DONE
-14- Test your app just like what is said in Project Requirements #7
-15- Provide the screenshots
+14- Setup the logs
+15- Test your app just like what is said in Project Requirements #7
+16- Provide the screenshots
     - provide a screenshot for the newly created article
     - provide a screenshot for the resource group //DONE
     - provide a screenshot for the storage endpoint URL [can be found in properties] //DONE
