@@ -6,13 +6,13 @@ TODOS:
     - run the app [python application.py]
 2- Complete TODOS in the file __init__.py //DONE
 3- Complete TODOS in the file views.py //DONE
-4- Modify the Python Application and SQL Database to include Subtitle field
+4- Modify the Python Application and SQL Database to include Subtitle field //DONE
     - Modify post.html //DONE
     - Modify index.html //DONE
     - Modify forms.py [class PostForm] //DONE
     - Modify models.py [class Post] //DONE
     - Modify post-table-init.sql //DONE
-5- Add the functionality to delete an article
+5- Add the functionality to delete an article //DONE
     - Modify index.html //DONE
     - Modify views.py //DONE
     - Modify models.py [class Post] //DONE
