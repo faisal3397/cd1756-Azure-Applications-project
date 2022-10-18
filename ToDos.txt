@@ -32,9 +32,9 @@ TODOS:
 12- Register your app in Azure Active Directory //DONE
 13- Modify the values in the file config.py //DONE
 14- Setup the logs
-15- Test your app just like what is said in Project Requirements #7
-16- Provide the screenshots
-    - provide a screenshot for the newly created article
+15- Test your app just like what is said in Project Requirements #7 //DONE
+16- Provide the screenshots 
+    - provide a screenshot for the newly created article //DONE
     - provide a screenshot for the resource group //DONE
     - provide a screenshot for the storage endpoint URL [can be found in properties] //DONE
     - provide a screenshot for the logs [with valid and invalid login attempts]
