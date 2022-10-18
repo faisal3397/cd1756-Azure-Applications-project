@@ -44,9 +44,9 @@ https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up
 
 ## **Availability**:
 ### **VM**:
-Test
+You'll need to group multiple VMs to provide High Availability
 ### **App Service**:
-Test
+High Availability is already supported in the App Service
 
 ----------------------------
 

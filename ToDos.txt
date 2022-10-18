@@ -19,7 +19,7 @@ TODOS:
 6- Add the functionality to delete an image
 7- Adjust the app to better track which user is logged in. //DONE
     - Modify view.py [function authorized()]
-8- Complete the analysis template in `WRITEUP.md` 
+8- Complete the analysis template in `WRITEUP.md` //DONE
     a VM or App Service solution for the CMS app:
         - Analyze costs, scalability, availability, and workflow
         - Choose the appropriate solution (VM or App Service) for deploying the app
