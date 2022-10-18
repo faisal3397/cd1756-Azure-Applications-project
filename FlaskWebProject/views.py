@@ -58,14 +58,27 @@ def post(id):
         form=form
     )
 
-@app.route('/post/<int:id>', methods=['DELETE'])
+@app.route('/delete_post/<int:id>', methods=['GET'])
 @login_required
 def delete_post(id):
+    app.logger.warning('delete_post invoked')
+
     post = Post.query.get(int(id))
     # TODO: Delete post //DONE
     if post is None:
         app.logger.error('Post not found')
     post.delete_post()
+    return redirect(url_for('home'))
+
+@app.route('/delete_image/<int:id>', methods=['GET'])
+@login_required
+def delete_image(id):
+    app.logger.warning('delete_image invoked')
+
+    post = Post.query.get(int(id))
+    if post is None:
+        app.logger.error('Post not found')
+    post.delete_image()
     return redirect(url_for('home'))
 
 @app.route('/login', methods=['GET', 'POST'])

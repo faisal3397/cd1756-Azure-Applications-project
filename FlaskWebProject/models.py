@@ -73,3 +73,12 @@ class Post(db.Model):
     def delete_post(self):
         db.session.delete(self)
         db.session.commit()
+    
+    def delete_image(self):
+        if(self.image_path):
+            try:
+                blob_service.delete_blob(blob_container, self.image_path)
+            except Exception:
+                flash(Exception)
+            self.image_path = None
+            db.session.commit()
