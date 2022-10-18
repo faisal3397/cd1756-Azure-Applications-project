@@ -16,10 +16,10 @@ TODOS:
     - Modify index.html //DONE
     - Modify views.py //DONE
     - Modify models.py [class Post] //DONE
-6- Add the functionality to delete an image
+6- Add the functionality to delete an image //DONE
 7- Adjust the app to better track which user is logged in. //DONE
     - Modify view.py [function authorized()]
-8- Complete the analysis template in `WRITEUP.md` 
+8- Complete the analysis template in `WRITEUP.md` //DONE
     a VM or App Service solution for the CMS app:
         - Analyze costs, scalability, availability, and workflow
         - Choose the appropriate solution (VM or App Service) for deploying the app
@@ -55,9 +55,9 @@ Project Requirements:
 10. Take a screenshot of your logs (can be from the Log stream in Azure) showing logging from an attempt to sign in with an invalid login, as well as a valid login.
 
 Bonuses:
-- Modify both the Python Application and SQL Database to include a Subtitle field. The field should be displayed below the Title field in the screenshot, and deployed with the app.
-- The current application does not allow for the deletion of a created article, or complete removal of an image after one is added (it can only be replaced). Add this functionality to the application.
-- The current application just uses the admin account if the user signs in with Microsoft. Adjust the app to better track which user is logged in.
+- Modify both the Python Application and SQL Database to include a Subtitle field. The field should be displayed below the Title field in the screenshot, and deployed with the app. //DONE
+- The current application does not allow for the deletion of a created article, or complete removal of an image after one is added (it can only be replaced). Add this functionality to the application. //DONE
+- The current application just uses the admin account if the user signs in with Microsoft. Adjust the app to better track which user is logged in. //DONE
 
 Images to submit:
 1. article-cms-solution.png
