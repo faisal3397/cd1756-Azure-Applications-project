@@ -25,13 +25,20 @@ TODOS:
         - Choose the appropriate solution (VM or App Service) for deploying the app
         - Justify your choice
     Detail how the app and any other needs would have to change for you to change your decision in the last section.
-9- Create a Resource Group in Azure    
-10- Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder).
-11- Create a Storage Container in Azure for `images` to be stored in a container.
+
+9- Create a Resource Group in Azure //DONE
+10- Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder). //DONE
+11- Create a Storage Container in Azure for `images` to be stored in a container. //DONE
 12- Register your app in Azure Active Directory
 13- Modify the values in the file config.py
 14- Test your app just like what is said in Project Requirements #7
 15- Provide the screenshots
+    - provide a screenshot for the newly created article
+    - provide a screenshot for the resource group
+    - provide a screenshot for the storage endpoint URL [can be found in properties] //DONE
+    - provide a screenshot for the logs [with valid and invalid login attempts]
+    - provide a screenshot for the populated tables in the SQL Database //DONE
+    - provide a screenshot for the Redirect URIs entered for your registered app [App registration -> authentication]
 
 Project Requirements:
 1. Create a Resource Group in Azure.
